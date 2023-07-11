@@ -1,6 +1,8 @@
 #pre for AS2
 #Section 2
 #2.1
+
+
 def isogram_checker(word):
     word = word.lower() # case sensitive
     letters = set()
@@ -11,8 +13,7 @@ def isogram_checker(word):
         else:
             letters.add(letter)
     return "This is Isogram!"
+print(isogram_checker("Enigma"))
 
 
-
- 
-print(isogram_checker("Machine"))
+#2.2
