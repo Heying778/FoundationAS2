@@ -44,8 +44,8 @@
 
   #### 1.7   Looking at the following code, describe a case where this function would throw an error when called. Describe this case and talk about what exception handling you’ll need. 
 
-def can_pay(price, cash_given):
-   if cash_given >= price:
+#### def can_pay(price, cash_given):
+(`)   if cash_given >= price:
        return True
    else:
        return False
@@ -82,6 +82,7 @@ Front-end development frameworks like React for building the user interface
 Back-end technologies like Node.js for handling user authentication, order processing, and database management
 Database management systems like MySQL for storing customer information, menus, and order data
 Payment gateways for secure payment processing, such as PayPal
-Analytics tools for monitoring user behavior and system performance
+Analytics tools for monitoring user behavior and system performance 
+
 
 
