@@ -89,4 +89,14 @@ ORDER BY s.Start_Time;
 
 
 --4.3
-
+SELECT m.Movie_Name
+FROM m
+JOIN s ON m.Movie_ID = s.Movie_ID
+GROUP BY m.Movie_Name
+HAVING COUNT(*) = ( -- in case in case of a tie
+    SELECT COUNT(*)
+    FROM showings
+    GROUP BY Movie_ID
+    ORDER BY COUNT(*) DESC --oder by Descending and use Limit to find to higest one
+    LIMIT 1
+);
