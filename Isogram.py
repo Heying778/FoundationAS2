@@ -16,4 +16,4 @@ def isogram_checker(word):
 print(isogram_checker("Enigma"))
 
 
-#2.2
+# see 2.2.py for Q2.2
